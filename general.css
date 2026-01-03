@@ -1,0 +1,30 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/*TEKST OG FARVER*/
+.grid_forsidevalg h1 {
+  color: brown;
+}
+
+.grid_forsidevalg h2 {
+  color: black;
+}
+
+/*BODY OG BACKGROUND*/
+
+body {
+  background-image: url(imgs/Billede-02.webp);
+  background-size: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
