@@ -1,0 +1,58 @@
+/* Forside */
+
+.grid_forsidevalg {
+  place-items: center;
+}
+
+/*Billeder, tilføj links, frames og centrer.*/
+#grid_temaer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid_temaer img:hover {
+  opacity: 0.7;
+}
+
+.tema_billeder {
+  margin: 1px;
+}
+
+#grid_temaer span {
+  background-color: gold;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/*Om mig page*/
+
+.punktopstilling ol {
+  list-style-type: none;
+  color: rgb(120, 84, 84);
+  background-color: rgb(248, 244, 250);
+  font-weight: bold;
+}
+
+/*TEMA 4*/
+
+.daily_card {
+  background-color: rgb(182, 182, 233);
+  padding: 5px;
+}
+
+.news_card .cta_btn {
+  justify-self: center;
+}
+
+.cta_btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin: 5px;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+}
+
+.news_card .cta_btn {
+  background-color: var(--color-cta-newscard-bg);
+}
