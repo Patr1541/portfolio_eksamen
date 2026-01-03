@@ -1,0 +1,63 @@
+/* TEMA 2 SITE */
+
+/* */
+
+.intro {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: chocolate;
+}
+
+/* Grid 1-3 */
+
+.grid_tema2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.grid_tema2 img {
+  height: 200px;
+  width: auto;
+}
+
+.grid_1-3 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.grid_3-3 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.grid_1-3 img,
+.grid_3-3 img {
+  order: -1;
+  /*Tilføj order på mellemboksen for modsat billede/tekst*/
+}
+
+.grid_1-3,
+.grid_2-3,
+.grid_3-3 {
+  display: grid;
+  list-style: inside;
+  background-color: rgba(208, 185, 130, 0.925);
+  border-radius: 5%;
+  width: 600px;
+  height: auto;
+  padding: 10px;
+}
+
+.citytour,
+.noerrebrotour,
+.foodtour {
+  display: grid;
+  list-style: inside;
+  background-color: rgba(208, 185, 130, 0.925);
+  border-radius: 5%;
+  width: 600px;
+  height: auto;
+  padding: 10px;
+}

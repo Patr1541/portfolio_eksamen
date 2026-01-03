@@ -1,0 +1,73 @@
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--deep-charcoal);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (width < 800px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    flex: 0 0 50vw;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    flex: 0 0 auto;
+    margin: 0 20px;
+  }
+  /*   .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear; */
+}
+nav.active .menu {
+  display: block;
+  /* background-color: blue; */
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  right: auto;
+  width: clamp(200px, 50vw, 400px);
+  z-index: 1;
+  opacity: 0.8;
+  background-color: var(--champagne);
+  border-radius: 20px;
+}
+header > nav li > a:after {
+  content: none;
+}
+nav.active .menu li {
+  margin: 20px 20px;
+}
+nav.active .menu a {
+  font-size: 20px;
+}
+
+nav.active .menu a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/*TILFØJ CLOSE PÅ BURGER-MENU, NÅR UDTRUKKET VED AT TRYKKE ELSEWHERE*/

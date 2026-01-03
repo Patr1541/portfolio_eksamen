@@ -42,3 +42,16 @@ img {
   background-color: var(--soft-ivory);
   color: var(--deep-charcoal);
 }
+
+.body_404 {
+  background-color: var(--warm-taupe);
+}
+
+/* Overskrift */
+
+.tema_overskrifter {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  text-align: center;
+}

@@ -44,13 +44,42 @@ ul li a:hover {
   border-radius: 50%;
 }
 
+/*TEMA-CIRCLER, GRID_4-4-4-4*/
+
+.grid_4-4-4-4 {
+  display: flex;
+  columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: var(--burnt-sienna);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f3ef; /* Soft Ivory */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.tema_hover a:hover {
+  filter: opacity(70%);
+}
+
 /*FOOTER*/
 
 .footer_menu {
   padding: 2rem;
   background-color: var(--burnt-sienna);
-}
 
-.footer_menu li a:hover {
-  background-color: var(--champagne);
+  .footer_menu li a:hover {
+    background-color: var(--champagne);
+  }
 }

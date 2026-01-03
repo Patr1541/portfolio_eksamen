@@ -1,0 +1,9 @@
+/* TEMA 3 */
+
+/* GRID 3-3-3 */
+
+.grid_tema3 img {
+  height: 200px;
+  width: auto;
+  gap: 30px;
+}
