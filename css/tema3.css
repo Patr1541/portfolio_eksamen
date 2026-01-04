@@ -57,3 +57,35 @@ p {
   flex-direction: wrap;
   gap: 10px;
 }
+
+.grid_1fr_2fr {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+/* Knap og forside-billede inde i grid */
+
+.grid_1fr_2fr .img_forside {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+/* .img_forside {
+  transition: filter 0.3s ease;
+}
+
+.img_forside:hover {
+  filter: brightness(0.7);
+} */
+
+.link_btn {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  text-decoration: none;
+}
+
+.link_btn:hover {
+  filter: opacity(50%);
+}

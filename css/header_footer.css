@@ -1,13 +1,8 @@
-/* 
-.header_bar {
-  background-color: grey;
-} */
-
 /* HEADER */
 
 .header_menu {
   padding: 0.2rem;
-  background-color: var(--burnt-sienna);
+  background-color: var(--champagne);
 }
 
 ul {
@@ -23,7 +18,7 @@ ul li {
 
 ul li a {
   display: block;
-  color: var(--soft-ivory);
+  color: var(--deep-charcoal);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -79,5 +74,5 @@ ul li a:hover {
 
 .footer_menu {
   padding: 30px;
-  background-color: var(--burnt-sienna);
+  background-color: var(--champagne);
 }

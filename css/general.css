@@ -21,6 +21,8 @@ img {
   --dark-brown: #5c4631;
   --champagne: #d1a160;
 
+  --nyfarve: #f3e7cf; /*Ny konstrast farve til skygge brug*/
+
   /* fonte */
   /* --font: "helvetica neue", arial, sans-serif;
   --font-weight-regular: 400;
@@ -56,7 +58,7 @@ img {
   place-content: center;
   padding: 1rem;
   text-align: center;
-  background-color: yellow;
+  background-color: var(--nyfarve);
 }
 
 .intro {
@@ -68,7 +70,9 @@ img {
   padding: 2rem;
   margin: 2rem auto;
   text-align: left;
-  background-color: rgb(102, 30, 210); /*Baggrundsfarve*/
+  background-color: var(--nyfarve); /*Baggrundsfarve*/
+
+  box-shadow: 1px 1.5px 1px 1.5px var(--burnt-sienna);
 }
 
 .intro h3 {
@@ -84,7 +88,7 @@ img {
   place-content: center;
   padding: 0.1rem;
   text-align: center;
-  background-color: rgb(42, 239, 49); /*Farve på streg*/
+  background-color: var(--dark-brown); /*Farve på streg*/
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
