@@ -59,7 +59,7 @@
 
 .cta_btn {
   color: var(--deep-charcoal);
-  background-color: violet; /*baggrundsfarve*/
+  background-color: var(--nyfarve); /*baggrundsfarve*/
   padding: 0.3rem;
   margin: 0.5rem;
   max-height: 100vh;
@@ -76,7 +76,7 @@
 [popover]:popover-open {
   display: inline;
   margin: 0 auto;
-  background-color: rgb(141, 141, 74); /*Baggrundsfarve popover-boks*/
+  background-color: rgb(235, 235, 41); /*Baggrundsfarve popover-boks*/
   padding: 2rem;
   max-height: 90vh;
   max-width: 50ch;
@@ -85,4 +85,6 @@
 
 [popover]:popover-open img {
   display: grid;
+  height: 100px;
+  width: auto;
 }

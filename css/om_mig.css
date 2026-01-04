@@ -1,8 +1,25 @@
 /*OM MIG PAGE*/
 
-.punktopstilling ol {
+/* .punktopstilling ol {
   list-style-type: none;
   color: rgb(120, 84, 84);
   background-color: rgb(248, 244, 250);
   font-weight: bold;
+} */
+
+.grid_om_mig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+}
+
+.grid_om_mig img {
+  height: 200px;
+  width: auto;
+  box-shadow: 3.5px 2px 2px var(--deep-charcoal);
+}
+
+.grid_om_mig p {
+  font-weight: bold;
+  padding: 10px;
 }

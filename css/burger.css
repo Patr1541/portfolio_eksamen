@@ -62,7 +62,7 @@ nav.active .menu a {
 }
 
 nav.active .menu a:hover {
-  color: red;
+  color: var(--burnt-sienna);
   text-decoration: none;
 }
 
