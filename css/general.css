@@ -78,7 +78,7 @@ img {
 
 /* Vandret skille-linie */
 
-.line {
+.pageline {
   display: grid;
   max-height: 10vh;
   place-content: center;
