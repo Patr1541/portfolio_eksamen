@@ -2,8 +2,58 @@
 
 /* GRID 3-3-3 */
 
+.grid_3-3-3 {
+  padding: 2rem;
+}
+
 .grid_tema3 img {
   height: 200px;
   width: auto;
-  gap: 30px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid_3-3-3 p {
+  padding-top: 0.5rem;
+  background-color: pink;
+  max-height: 100vh;
+  max-width: 65ch;
+}
+
+/* Accordian fold-out */
+
+summary::after {
+  content: "↓";
+  margin-left: 1rem;
+}
+
+[open] summary::after {
+  content: "x";
+}
+
+summary {
+  cursor: pointer;
+}
+
+.folud h2,
+p {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.accordian .cta_btn {
+  margin-top: 10px;
+  background-color: rgb(90, 219, 254); /*Farve-knap*/
+  padding: 0.3rem;
+  border-radius: 15px;
+  max-width: 150px;
+}
+
+/* Tekst og billeder inde i accordian */
+
+.img_class {
+  display: flex;
+  flex-direction: wrap;
+  gap: 10px;
 }
