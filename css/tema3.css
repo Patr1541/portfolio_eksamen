@@ -16,7 +16,7 @@
 
 .grid_3-3-3 p {
   padding-top: 0.5rem;
-  background-color: pink;
+  background-color: var(--nyfarve);
   max-height: 100vh;
   max-width: 65ch;
   line-height: 25px;
@@ -45,8 +45,8 @@ p {
 
 .accordian .cta_btn {
   margin-top: 10px;
-  background-color: rgb(90, 219, 254); /*Farve-knap*/
-  padding: 0.3rem;
+  background-color: var(--warm-taupe); /*Farve-knap*/
+  padding: 10px;
   border-radius: 15px;
   max-width: 150px;
 }
@@ -59,14 +59,56 @@ p {
   gap: 10px;
 }
 
-.grid_1fr_2fr {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-}
+/* MOBILESITE, MEDIAQ */
 
-/* Knap og forside-billede inde i grid */
+@media (max-width: 600px) {
+  /* GRID WRAPPER */
+  .grid_3-3-3 {
+    padding: 1rem;
+  }
 
-.grid_1fr_2fr .img_forside {
-  max-width: 500px;
-  margin-top: 20px;
+  /* BILLEDER */
+  .grid_tema3 img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* TEKST */
+  .grid_3-3-3 p {
+    max-width: 100%;
+    line-height: 22px;
+    padding: 0.8rem;
+  }
+
+  /* ACCORDION */
+  summary {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .accordian .cta_btn {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* BILLEDER + TEKST INDE I ACCORDION */
+  .img_class {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Hvis du senere tilføjer grids i accordion */
+  .grid_1fr_2fr {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Forside-billede i accordion */
+  .grid_1fr_2fr .img_forside {
+    max-width: 100%;
+    margin-top: 10px;
+  }
 }

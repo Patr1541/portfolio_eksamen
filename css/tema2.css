@@ -88,3 +88,69 @@
   height: 100px;
   width: auto;
 }
+
+/* MOBILESITE, MEDIAQ */
+
+@media (max-width: 600px) {
+  /* GRID TEMA 2 – fra 2 kolonner → 1 kolonne */
+  .grid_tema2 {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .grid_tema2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Fjern faste grid-placeringer på mobil */
+  .grid_1-3,
+  .grid_3-3 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  /* Bokse skaleres ned fra 600px → 100% */
+  .grid_1-3,
+  .grid_2-3,
+  .grid_3-3 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  /* Billeder i bokse */
+  .grid_1-3 img,
+  .grid_3-3 img {
+    order: -1;
+    width: 100%;
+    height: auto;
+  }
+
+  /* POP-OVER */
+  .news_card {
+    padding: 0.5rem 0;
+    gap: 0.3rem;
+  }
+
+  .cta_btn {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    font-size: 0.9rem;
+  }
+
+  [popover]:popover-open {
+    width: 95vw;
+    max-width: none;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  [popover]:popover-open img {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
