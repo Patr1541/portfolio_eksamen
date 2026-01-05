@@ -35,7 +35,7 @@
 .grid_3-3 {
   display: grid;
   list-style: inside;
-  background-color: rgba(208, 185, 130, 0.925);
+  background-color: var(--nyfarve);
   border-radius: 5%;
   width: 600px;
   height: auto;
@@ -47,7 +47,6 @@
 /* Pop over design */
 
 .news_card {
-  /* background-color: red;*/
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
@@ -59,7 +58,7 @@
 
 .cta_btn {
   color: var(--deep-charcoal);
-  background-color: var(--nyfarve); /*baggrundsfarve*/
+  background-color: var(--warm-taupe); /*baggrundsfarve*/
   padding: 0.3rem;
   margin: 0.5rem;
   max-height: 100vh;
@@ -76,11 +75,12 @@
 [popover]:popover-open {
   display: inline;
   margin: 0 auto;
-  background-color: rgb(235, 235, 41); /*Baggrundsfarve popover-boks*/
-  padding: 2rem;
+  background-color: var(--nyfarve); /*Baggrundsfarve popover-boks*/
   max-height: 90vh;
-  max-width: 50ch;
+  max-width: 80ch;
   width: 90vw;
+  padding: 30px;
+  margin-top: 50px;
 }
 
 [popover]:popover-open img {

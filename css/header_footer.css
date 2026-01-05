@@ -28,7 +28,8 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: var(--champagne);
+  background-color: var(--nyfarve);
+  border-radius: 5px;
 }
 
 /* LOGO */
@@ -59,7 +60,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #f5f3ef; /* Soft Ivory */
+  color: var(--soft-ivory); /* Soft Ivory */
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;

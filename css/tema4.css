@@ -1,17 +1,17 @@
 /* TEMA 4 */
 
 .grid_tema4 img {
-  height: 200px;
+  height: 150px;
   width: auto;
-  border: 2px;
-  border-color: red;
+  place-content: center;
 }
 
 .grid_tema4 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .grid_tema4_2 h3 {

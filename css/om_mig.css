@@ -23,3 +23,16 @@
   font-weight: bold;
   padding: 10px;
 }
+
+.grid_symboler h3 {
+  padding: 10px;
+  background-color: pink;
+}
+
+.grid_symboler img {
+  height: 100px;
+  width: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
