@@ -1,9 +1,11 @@
 /* TEMA 5 */
 
 .grid_tema5 img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   box-shadow: 5px 5px 5px rgb(28, 19, 8);
+  margin: 0 auto;
+  padding: 10px;
 }
 
 /*Forsøg på genskabelse af galleri*/
@@ -50,3 +52,10 @@
   grid-row: 5/5;
 }
  */
+
+/* Tekst grid */
+
+.grid_tema5_2 {
+  /*   display: inline;
+  max-width: 100%; */
+}

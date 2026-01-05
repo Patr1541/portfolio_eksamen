@@ -3,4 +3,25 @@
 .grid_tema4 img {
   height: 200px;
   width: auto;
+  border: 2px;
+  border-color: red;
+}
+
+.grid_tema4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.grid_tema4_2 h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid_tema4_2 p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* max-width: ; */
+  max-height: 300px;
 }
