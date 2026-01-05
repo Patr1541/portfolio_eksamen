@@ -57,9 +57,9 @@
     /*     color: var(--soft-ivory); */
     font-weight: bolder;
     font-size: 36px;
-    color: red;
+    color: var(--nyfarve);
   }
-  /*Tilføj sideskift*/
+  /* Tilføj sideskift */
 }
 
 /*GRID 2-1*/
@@ -74,7 +74,7 @@
 }
 
 .grid_2-1 {
-  background-color: var(--champagne);
+  background-color: var(--nyfarve);
   padding: 50px;
   border-radius: 1rem;
   margin: 0 auto;

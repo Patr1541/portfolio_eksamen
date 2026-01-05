@@ -19,6 +19,7 @@
   background-color: pink;
   max-height: 100vh;
   max-width: 65ch;
+  line-height: 25px;
 }
 
 /* Accordian fold-out */
@@ -69,25 +70,3 @@ p {
   max-width: 500px;
   margin-top: 20px;
 }
-
-/* .img_forside {
-  transition: filter 0.3s ease;
-}
-
-.img_forside:hover {
-  filter: brightness(0.7);
-} */
-
-.link_btn {
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  background-color: tomato;
-  text-decoration: none;
-}
-
-.link_btn:hover {
-  filter: opacity(50%);
-}
-
-/* INTRO BOKS MED LINK-KNAP */
