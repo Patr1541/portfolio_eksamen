@@ -54,11 +54,12 @@
   }
 
   .pil_ned {
-    color: var(--soft-ivory);
+    /*     color: var(--soft-ivory); */
     font-weight: bolder;
     font-size: 36px;
     color: red;
   }
+  /*Tilføj sideskift*/
 }
 
 /*GRID 2-1*/
