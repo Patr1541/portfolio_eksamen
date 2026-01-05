@@ -77,3 +77,49 @@ ul li a:hover {
   padding: 30px;
   background-color: var(--champagne);
 }
+
+/* MOBILESITE, MEDIAQ */
+
+@media (max-width: 600px) {
+  /* HEADER */
+  .header_menu {
+    padding: 0.5rem;
+  }
+
+  /* Skjul desktop-menuen, burger tager over */
+  ul {
+    display: none;
+  }
+
+  /* Logo skaleres ned */
+  .header_logo {
+    width: 25%;
+    padding: 10px;
+  }
+
+  /* TEMA-CIRCLER – fra 4 i række → 2 i række */
+  .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+  }
+
+  /* FOOTER */
+  .footer_menu {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer_menu li {
+    margin-bottom: 10px;
+  }
+}

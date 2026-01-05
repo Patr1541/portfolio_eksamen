@@ -23,3 +23,92 @@
   color: white;
   padding: 20px;
 }
+
+/* MOBILESITE, MEDIAQ */
+
+@media (max-width: 600px) {
+  /* OVERSKRIFTER */
+  .tema_overskrifter h1 {
+    font-size: 1.8rem;
+  }
+
+  .tema_overskrifter h3 {
+    font-size: 1.2rem;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 1rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* LINKS */
+  .link_sites {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  .link_btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* GRID – fra 3 kolonner → 1 kolonne */
+  .grid_tema5 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  /* BILLEDER */
+  .grid_tema5 img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-shadow: 3px 3px 5px rgb(28, 19, 8);
+  }
+
+  /* TEKSTBLOK UNDER GALLERI */
+  .grid_tema5_2 {
+    padding: 1rem;
+    background-color: var(--champagne);
+    border-radius: 10px;
+  }
+  .grid_tema5_2 p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+  }
+
+  .grid_tema5_2 h5 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  /* TEMA-CIRKLER (nederst) */
+  .grid_4-4-4-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+  /* FOOTER */
+  .footer_menu {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
