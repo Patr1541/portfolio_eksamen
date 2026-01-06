@@ -31,7 +31,6 @@
 .grid_tema4_2 p {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* max-width: ; */
   max-height: 300px;
 }
 

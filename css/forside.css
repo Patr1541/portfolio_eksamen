@@ -8,14 +8,14 @@
   overflow: hidden;
   min-height: 50vh;
   max-height: 75vh;
-  /*   object-fit: cover; */
 }
 
 .grid_hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /*WHYYYYY*/
+  display: block;
+  filter: opacity(95%);
 }
 
 /* TEKST PÅ HERO BILLEDE */
@@ -25,7 +25,6 @@
   z-index: 10;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
 
@@ -34,10 +33,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
   padding-bottom: 0rem;
   padding-top: 250px;
-
-  filter: opacity(95%);
 
   h1 {
     color: var(--soft-ivory);
@@ -54,7 +52,6 @@
   }
 
   .pil_ned {
-    /*     color: var(--soft-ivory); */
     font-weight: bolder;
     font-size: 36px;
     color: var(--nyfarve);
@@ -65,15 +62,11 @@
 /*GRID 2-1*/
 
 .grid_2-1 {
-  display: flex;
-  columns: 1fr 3fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   padding-top: 4rem;
   padding-bottom: 4rem;
   gap: 50px;
-  margin: 2rem;
-}
-
-.grid_2-1 {
   background-color: var(--nyfarve);
   padding: 50px;
   border-radius: 1rem;
@@ -86,6 +79,8 @@
 .grid_2-1 img {
   padding-left: 10px;
   margin-right: 10px;
+  height: 300px;
+  width: auto;
 }
 
 /* MOBILE SITE, MEDIAQ, FORSIDE */
@@ -97,40 +92,47 @@
     max-height: 50vh;
   }
 
+  .grid_hero img {
+    object-position: center;
+  }
+
+  /* TEKST PÅ HERO BILLEDE */
   .hero_textcontent {
     padding-top: 120px; /* mindre afstand på mobil */
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-bottom: 0;
+
+    h1 {
+      font-size: 1.8rem;
+      padding: 0 1rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+
+    .pil_ned {
+      font-size: 28px;
+      margin-top: 1rem;
+    }
   }
 
-  .hero_textcontent h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero_textcontent h3 {
-    font-size: 1rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .hero_textcontent p {
-    font-size: 0.9rem;
-  }
-
-  .hero_textcontent .pil_ned {
-    font-size: 28px;
-  }
-
-  /* GRID 2-1 → STACK I ÉN KOLONNE */
+  /* GRID 2-1 → STACK PÅ MOBIL */
   .grid_2-1 {
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 20px;
-    margin: 1rem;
-    max-height: none; /* undgå at klippe indhold */
+    grid-template-columns: 1fr; /* én kolonne */
+    gap: 30px;
+    padding: 30px;
+    max-height: none;
   }
 
   .grid_2-1 img {
     width: 100%;
+    height: auto;
     padding-left: 0;
     margin-right: 0;
   }
