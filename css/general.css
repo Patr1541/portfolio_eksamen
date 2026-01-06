@@ -32,6 +32,7 @@ h5,
 h6 {
   font-family: var(--font-overskrift);
   padding: 10px;
+  line-height: 23px;
 }
 body,
 p {
