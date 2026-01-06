@@ -45,45 +45,53 @@ section h3 {
 /* MOBILESITE, MEDIAQ, OM-MIG */
 
 @media (max-width: 600px) {
-  /* GRID – fra 2 kolonner → 1 kolonne */
   .grid_om_mig {
-    grid-template-columns: 1fr;
-    margin: 10px;
+    grid-template-columns: 1fr; /* én kolonne */
+    padding: 10px;
     gap: 20px;
+    text-align: center;
   }
 
-  /* BILLEDE */
   .grid_om_mig img {
-    width: 100%;
-    height: auto;
+    height: 250px; /* mindre billede på mobil */
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .grid_om_mig p {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+
+  .grid_sprog-land {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section h3 {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .grid_symboler {
+    justify-content: center;
+    /* gap: 10px; */
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
   }
 
-  /* TEKST */
-  .grid_om_mig p {
-    padding: 10px 0;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  /* SYMBOL-SEKTION */
-  .grid_symboler h3 {
-    text-align: center;
-    padding: 10px 0;
-  }
-
   .grid_symboler img {
-    height: 70px;
-    width: auto;
-    padding: 5px;
+    height: 60px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    place-items: center;
   }
 
-  /* Hvis symbolerne skal stå i grid på mobil */
-  .grid_symboler {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 10px;
-    padding: 10px;
+  .grid_om_mig-1 {
+    place-content: center; /* venstre giver sjældent mening på mobil */
   }
 }

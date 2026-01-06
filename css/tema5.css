@@ -8,8 +8,6 @@
   padding: 10px;
 }
 
-/*Forsøg på genskabelse af galleri*/
-
 .grid_tema5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
