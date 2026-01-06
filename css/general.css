@@ -9,9 +9,7 @@ img {
   height: auto;
   display: block;
 }
-
 /*FARVER OG FONTE*/
-
 :root {
   /* Farver */
   --deep-charcoal: #2c2c2c; /*font-farve*/
@@ -20,16 +18,12 @@ img {
   --burnt-sienna: #915a3c;
   --dark-brown: #5c4631;
   --champagne: #d1a160;
-
   --nyfarve: #f3e7cf; /*Ny konstrast farve til skygge brug*/
-
-  /* fonte */
-
+  /* Fonte */
   --font-overskrift: "Playfair Display", serif;
   --font-nav: "Montserrat", sans-serif;
   --font-undertekster: "Raleway", sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -37,18 +31,16 @@ h4,
 h5,
 h6 {
   font-family: var(--font-overskrift);
+  padding: 10px;
 }
-
 body,
 p {
   font-family: var(--font-undertekster);
   line-height: 23px;
+  padding: 10px;
 }
-
-li,
-a {
+nav a {
   font-family: var(--font-nav);
-  /* font-style: italic; */
 }
 
 /* --font: "helvetica neue", arial, sans-serif;
@@ -57,27 +49,16 @@ a {
   --font-weight-bold: 700;
   --font-style-italic: italic; */
 
-/* font size */
-/*  --h1-size: 2.25rem;
-  --h2-size: 1.25rem;
-  --h3-size: 1.5rem;
-  --h4-size: 1rem;
-  --h5-size: 0.75rem;
-  --p-size: 1rem; */
-
 /* GENERALLE REGLER */
 .body {
   background-color: var(--soft-ivory);
   color: var(--deep-charcoal);
   /*   margin: 0 20px 0 20px; alt indhold med undtagelse af streger*/
 }
-
 .body_404 {
   background-color: var(--warm-taupe);
 }
-
 /* Overskrift */
-
 .tema_overskrifter {
   display: grid;
   max-height: 50vh;
@@ -88,7 +69,6 @@ a {
   background-color: var(--nyfarve);
   color: var(--deep-charcoal);
 }
-
 .intro {
   display: grid;
   grid-template-columns: 1fr;
@@ -102,20 +82,16 @@ a {
   /* box-shadow: 1px 1.5px 1px 1.5px var(--burnt-sienna); */
   /* filter: opacity(95%); */
 }
-
 .intro h3 {
   text-align: center;
   padding: 0.5rem;
   color: var(--burnt-sienna);
 }
-
 .intro p {
   line-height: 1.3;
   color: var(--deep-charcoal);
 }
-
 /* Vandret skille-linie */
-
 .pageline {
   display: grid;
   max-height: 10vh;
@@ -126,9 +102,7 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-
 /* Link-knap til hjemmeside */
-
 .link_btn {
   padding: 10px;
   border-radius: 10px;
@@ -137,66 +111,53 @@ a {
   text-decoration: none;
   margin-right: 20px;
 }
-
 .link_btn:hover {
   filter: opacity(50%);
 }
-
 .link_sites {
   text-align: right;
 }
-
 /* MOBILSITE I MEDIAQ, GENERAL */
-
 @media (max-width: 600px) {
   /* GENERELT */
   .body {
     padding: 0 1rem;
   }
-
   /* OVERSKRIFT-SEKTION */
   .tema_overskrifter {
     padding: 1.5rem 1rem;
     max-height: none;
   }
-
   .tema_overskrifter h1 {
     font-size: 1.8rem;
   }
-
   .tema_overskrifter h3 {
     font-size: 1.2rem;
   }
-
   /* INTRO-SEKTION */
   .intro {
     padding: 1.5rem;
     margin: 1.5rem auto;
     max-width: 90vw;
   }
-
   .intro h3 {
     font-size: 1.2rem;
   }
-
   .intro p {
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
   /* PAGELINE */
   .pageline {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem;
   }
-
   /* LINK-KNAPPER */
   .link_sites {
     text-align: center;
     margin-top: 1rem;
   }
-
   .link_btn {
     display: block;
     margin: 10px auto;
