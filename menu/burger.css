@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-header {
+.header {
   position: sticky;
   top: 0;
   display: flex;
@@ -15,10 +15,10 @@ header {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+/* .logo img {
   width: 50px;
   height: 50px;
-}
+} */
 
 nav {
   display: flex;
@@ -36,11 +36,11 @@ nav {
   margin-right: 20px;
 }
 
-.menu li:last-child {
+/* .menu li:last-child {
   margin-right: 0;
-}
+} */
 
-.menu a {
+.header_menu a {
   display: block;
   padding: 10px;
   color: #333333;
@@ -49,9 +49,17 @@ nav {
   text-align: end;
 }
 
-.menu a:hover {
+.header_menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu a:hover {
   color: #ff0000;
 }
+
+/*..............................*/
 
 .burger {
   width: 30px;
@@ -63,14 +71,18 @@ nav {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  border-radius: 10px;
+  background-color: var(--deep-charcoal);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
 .burger {
   display: none;
 }
-@media screen and (max-width: 800px) {
+
+/* MOBIL MEDIA Q */
+
+@media screen and (max-width: 600px) {
   .menu {
     display: none;
   }
@@ -78,6 +90,8 @@ nav {
     display: block;
     background-color: transparent;
     border: 0;
+    flex: 0 0 auto;
+    margin: 0 20px;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -95,14 +109,22 @@ nav {
   }
 
   nav.active .menu {
-    display: block;
-    background-color: #ffffff;
+    /*display: block; flex*/
+
+    display: flex;
+    flex-direction: column-reverse;
+
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 9999;
+
+    box-shadow: 0 10px 10px var(--dark-brown);
+
+    background-color: var(--nyfarve);
+    opacity: 0.8;
+    border-radius: 10px;
   }
 
   nav.active .menu li {
@@ -110,7 +132,17 @@ nav {
   }
 
   nav.active .menu a {
-    font-size: 24px;
+    font-size: 20px; /*tjek på telefon*/
+  }
+
+  /* nav.active  */
+  .menu a:hover {
+    color: var(--soft-ivory);
+    text-decoration: none;
+  }
+
+  /*ekstra fra egen*/
+  .logo {
+    flex: 0 0 50vw;
   }
 }
- */

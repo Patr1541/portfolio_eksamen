@@ -67,11 +67,11 @@ ul li a:hover {
   margin: 1rem;
 }
 
+/*FOOTER*/
+
 .tema_hover a:hover {
   filter: opacity(70%);
 }
-
-/*FOOTER*/
 
 .footer_menu {
   padding: 30px;
