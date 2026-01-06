@@ -34,3 +34,36 @@
   /* max-width: ; */
   max-height: 300px;
 }
+
+/* MOBILESITE, MEDIAQ, TEMA 4 */
+
+@media (max-width: 800px) {
+  /* GRID – fra 4 kolonner → 1 kolonne */
+  .grid_tema4 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* BILLEDER */
+  .grid_tema4 img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* OVERSKRIFTER */
+  .grid_tema4_2 h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  /* TEKST – fra 2 kolonner → 1 kolonne */
+  .grid_tema4_2 p {
+    grid-template-columns: 1fr;
+    max-height: none;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+  }
+}

@@ -29,11 +29,56 @@ section h3 {
 
   width: auto;
   padding: 1px;
-  /*   column-gap: 10px; */
 }
 
 .grid_symboler img {
   height: 80px;
   width: auto;
   margin: 0 auto;
+}
+
+/* MOBILESITE, MEDIAQ, OM-MIG */
+
+@media (max-width: 600px) {
+  /* GRID – fra 2 kolonner → 1 kolonne */
+  .grid_om_mig {
+    grid-template-columns: 1fr;
+    margin: 10px;
+    gap: 20px;
+  }
+
+  /* BILLEDE */
+  .grid_om_mig img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* TEKST */
+  .grid_om_mig p {
+    padding: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* SYMBOL-SEKTION */
+  .grid_symboler h3 {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .grid_symboler img {
+    height: 70px;
+    width: auto;
+    padding: 5px;
+  }
+
+  /* Hvis symbolerne skal stå i grid på mobil */
+  .grid_symboler {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
 }

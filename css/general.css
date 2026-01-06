@@ -119,3 +119,64 @@ img {
 .link_sites {
   text-align: right;
 }
+
+/* MOBILSITE I MEDIAQ, GENERAL */
+
+@media (max-width: 600px) {
+  /* GENERELT */
+  .body {
+    padding: 0 1rem;
+  }
+
+  /* OVERSKRIFT-SEKTION */
+  .tema_overskrifter {
+    padding: 1.5rem 1rem;
+    max-height: none;
+  }
+
+  .tema_overskrifter h1 {
+    font-size: 1.8rem;
+  }
+
+  .tema_overskrifter h3 {
+    font-size: 1.2rem;
+  }
+
+  /* INTRO-SEKTION */
+  .intro {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 90vw;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* PAGELINE */
+  .pageline {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+  }
+
+  /* LINK-KNAPPER */
+  .link_sites {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .link_btn {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
