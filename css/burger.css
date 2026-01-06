@@ -15,9 +15,9 @@
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-/* .burger {
+.burger {
   display: none;
-} */
+}
 
 .header_menu nav {
   display: flex;
@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-@media screen and (width < 800px) {
+@media screen and (width < 600px) {
   .menu {
     display: none;
   }
