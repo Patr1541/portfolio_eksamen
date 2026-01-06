@@ -2,14 +2,15 @@
 
 .grid_om_mig {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   padding: 20px;
 }
 
 .grid_om_mig img {
-  height: 200px;
+  height: 400px;
   width: auto;
+  border-radius: 50%;
   box-shadow: 3.5px 2px 2px var(--deep-charcoal);
 }
 
@@ -35,6 +36,10 @@ section h3 {
   height: 80px;
   width: auto;
   margin: 0 auto;
+}
+
+.grid_om_mig-1 {
+  place-content: left;
 }
 
 /* MOBILESITE, MEDIAQ, OM-MIG */
