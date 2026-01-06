@@ -128,6 +128,7 @@ nav a {
   .tema_overskrifter {
     padding: 1.5rem 1rem;
     max-height: none;
+    line-height: 25px;
   }
   .tema_overskrifter h1 {
     font-size: 1.8rem;
