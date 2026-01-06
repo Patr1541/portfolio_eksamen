@@ -26,14 +26,19 @@ img {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--font-overskrift);
   padding: 10px;
   line-height: 23px;
 }
+
+h4,
+h5,
+h6 {
+  font-family: var(--font-overskrift);
+  line-height: 23px;
+}
+
 body,
 p {
   font-family: var(--font-undertekster);

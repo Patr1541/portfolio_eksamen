@@ -27,7 +27,6 @@
 .grid_1-3 img,
 .grid_3-3 img {
   order: -1;
-  /*Tilføj order på mellemboksen for modsat billede/tekst*/
 }
 
 .grid_1-3,
@@ -44,21 +43,9 @@
 
 /* ......POP-OVER..... */
 
-/* Pop over design */
-
-.news_card {
-  display: grid;
-  grid-template-rows: repeat(min-content);
-  gap: 0.4rem;
-  padding: 1rem 0;
-  height: minmax(300px, min-content);
-}
-
-/* Pop over knap-design */
-
 .cta_btn {
   color: var(--deep-charcoal);
-  background-color: var(--warm-taupe); /*baggrundsfarve*/
+  background-color: var(--warm-taupe);
   padding: 0.3rem;
   margin: 0.5rem;
   max-height: 100vh;
@@ -66,7 +53,7 @@
   border-radius: 10px;
 }
 
-/* Popover regler for baggrundsblur osv*/
+/* Popover regler for baggrundsblur */
 
 [popover]::backdrop {
   backdrop-filter: blur(2px);
@@ -75,7 +62,7 @@
 [popover]:popover-open {
   display: inline;
   margin: 0 auto;
-  background-color: var(--nyfarve); /*Baggrundsfarve popover-boks*/
+  background-color: var(--nyfarve);
   max-height: 90vh;
   max-width: 80ch;
   width: 90vw;
@@ -95,7 +82,6 @@
 /* MOBILESITE, MEDIAQ, TEMA 2 */
 
 @media (max-width: 600px) {
-  /* GRID TEMA 2 – fra 2 kolonner → 1 kolonne */
   .grid_tema2 {
     grid-template-columns: 1fr;
     padding: 0.5rem;
@@ -107,14 +93,12 @@
     height: auto;
   }
 
-  /* Fjern faste grid-placeringer på mobil */
   .grid_1-3,
   .grid_3-3 {
     grid-row: auto;
     grid-column: auto;
   }
 
-  /* Bokse skaleres ned fra 600px → 100% */
   .grid_1-3,
   .grid_2-3,
   .grid_3-3 {
@@ -123,7 +107,6 @@
     border-radius: 10px;
   }
 
-  /* Billeder i bokse */
   .grid_1-3 img,
   .grid_3-3 img {
     order: -1;
@@ -131,10 +114,10 @@
     height: auto;
   }
 
-  /* POP-OVER */
-  .news_card {
-    padding: 0.5rem 0;
-    gap: 0.3rem;
+  .grid_3-3 img {
+    display: flex;
+    flex-direction: wrap;
+    column-gap: 2%;
   }
 
   .cta_btn {
