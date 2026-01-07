@@ -6,10 +6,6 @@
   margin: 0 auto;
   padding: 20px;
 }
-.grid_sprog-land {
-  display: flex;
-  padding-top: 20px;
-}
 
 .grid_om_mig img {
   height: 400px;
@@ -21,11 +17,16 @@
 .grid_om_mig p {
   font-weight: bold;
   padding: 20px;
-  line-height: 23px;
+  line-height: 27px;
+}
+
+.grid_sprog-land {
+  display: flex;
+  padding-top: 20px;
 }
 
 .grid_sprog-land p {
-  line-height: 23px;
+  line-height: 27px;
 }
 
 section h3 {
@@ -37,13 +38,14 @@ section h3 {
   display: flex;
   flex-wrap: wrap;
   width: auto;
-  padding: 1px;
 }
 
 .grid_symboler img {
   height: 80px;
   width: auto;
   margin: 0 auto;
+  padding-top: 15px;
+  gap: 5px;
 }
 
 /* .grid_om_mig_ h3 {
