@@ -1,9 +1,8 @@
 /* TEMA 5 */
 
 .grid_tema5 img {
-  height: 200px;
-  width: 200px;
-
+  height: 250px;
+  width: 250;
   margin: 0 auto;
   padding: 10px;
 }
@@ -15,11 +14,6 @@
   margin: 0 auto;
   padding: 30px;
   background-color: var(--champagne);
-}
-
-.grid_tema5 p {
-  color: white;
-  padding: 20px;
 }
 
 .grid_tema5_2 {

@@ -43,7 +43,8 @@ body,
 p {
   font-family: var(--font-undertekster);
   line-height: 23px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 nav a {
   font-family: var(--font-nav);
