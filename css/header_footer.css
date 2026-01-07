@@ -96,18 +96,16 @@ html {
     padding: 0.5rem;
   }
 
-  /* Skjul desktop-menuen, burger tager over */
   ul {
     display: none;
   }
 
-  /* Logo skaleres ned */
   .header_logo {
     width: 25%;
     padding: 10px;
   }
 
-  /* TEMA-CIRCLER – fra 4 i række → 2 i række */
+  /* TEMA-CIRCLER */
   .grid_4-4-4-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,6 +122,7 @@ html {
   }
 
   /* FOOTER */
+
   .footer_menu {
     padding: 20px;
     text-align: center;

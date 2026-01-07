@@ -63,12 +63,10 @@ p {
 /* MOBILESITE, MEDIAQ, TEMA 3 */
 
 @media (max-width: 600px) {
-  /* GRID WRAPPER */
   .grid_3-3-3 {
     padding: 16px;
   }
 
-  /* BILLEDER */
   .grid_tema3 img {
     width: 100%;
     height: auto;
@@ -76,14 +74,12 @@ p {
     margin-bottom: 8px;
   }
 
-  /* TEKST */
   .grid_3-3-3 p {
     max-width: 100%;
     line-height: 22px;
     padding: 13px;
   }
 
-  /* ACCORDION */
   summary {
     font-size: 16px;
     padding: 8px 0;
@@ -95,19 +91,16 @@ p {
     font-size: 14px;
   }
 
-  /* BILLEDER + TEKST INDE I ACCORDION */
   .img_class {
     flex-direction: column;
     gap: 16px;
   }
 
-  /* Hvis du senere tilføjer grids i accordion */
   .grid_1fr_2fr {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  /* Forside-billede i accordion */
   .grid_1fr_2fr .img_forside {
     max-width: 100%;
     margin-top: 10px;
