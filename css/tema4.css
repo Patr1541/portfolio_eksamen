@@ -1,5 +1,7 @@
 /* TEMA 4 */
 
+/* Grid tema 4 */
+
 .grid_tema4 img {
   height: 150px;
   width: auto;
@@ -14,12 +16,19 @@
   padding: 20px;
 }
 
-.grid_tema4_2 {
-  padding: 20px;
-}
-
 .grid_tema4 h5 {
   background-color: var(--nyfarve);
+  padding: 3px;
+}
+
+.grid_tema4 p {
+  padding: 3px;
+}
+
+/* Grid 4_2 */
+
+.grid_tema4_2 {
+  padding: 20px;
 }
 
 .grid_tema4_2 h3 {
@@ -32,6 +41,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-height: 300px;
+  padding: 10px;
 }
 
 /* MOBILESITE, MEDIAQ, TEMA 4 */
