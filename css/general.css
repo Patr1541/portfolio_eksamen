@@ -51,12 +51,6 @@ nav a {
   font-family: var(--font-nav);
 }
 
-/* --font: "helvetica neue", arial, sans-serif;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-style-italic: italic; */
-
 /* GENERALLE REGLER */
 .body {
   background-color: var(--soft-ivory);
@@ -123,11 +117,10 @@ nav a {
 }
 /* MOBILSITE I MEDIAQ, GENERAL */
 @media (max-width: 600px) {
-  /* GENERELT */
   .body {
     padding: 0 1rem;
   }
-  /* OVERSKRIFT-SEKTION */
+
   .tema_overskrifter {
     padding: 1.5rem 1rem;
     max-height: none;
@@ -139,7 +132,7 @@ nav a {
   .tema_overskrifter h3 {
     font-size: 1.2rem;
   }
-  /* INTRO-SEKTION */
+
   .intro {
     padding: 1.5rem;
     margin: 1.5rem auto;
@@ -152,13 +145,13 @@ nav a {
     font-size: 0.95rem;
     line-height: 1.4;
   }
-  /* PAGELINE */
+
   .pageline {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem;
   }
-  /* LINK-KNAPPER */
+
   .link_sites {
     text-align: center;
     margin-top: 1rem;
