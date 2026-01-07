@@ -27,6 +27,8 @@
 .grid_1-3 img,
 .grid_3-3 img {
   order: -1;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .grid_1-3,
@@ -53,8 +55,6 @@
   border-radius: 10px;
 }
 
-/* Popover regler for baggrundsblur */
-
 [popover]::backdrop {
   backdrop-filter: blur(2px);
 }
@@ -77,6 +77,10 @@
 [popover]:popover-open img {
   height: 100px;
   width: auto;
+}
+
+[popover]:popover-open p {
+  padding-top: 10px;
 }
 
 /* MOBILESITE, MEDIAQ, TEMA 2 */

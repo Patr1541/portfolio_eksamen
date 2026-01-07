@@ -28,7 +28,8 @@ h1,
 h2,
 h3 {
   font-family: var(--font-overskrift);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 23px;
 }
 

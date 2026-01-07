@@ -48,26 +48,18 @@ section h3 {
   gap: 5px;
 }
 
-/* .grid_om_mig_ h3 {
-  margin: 0 auto;
-} */
-
-/* .grid_om_mig-1 {
-  place-content: center;
-} */
-
 /* MOBILESITE, MEDIAQ, OM-MIG */
 
 @media (max-width: 600px) {
   .grid_om_mig {
-    grid-template-columns: 1fr; /* én kolonne */
+    grid-template-columns: 1fr;
     padding: 10px;
     gap: 20px;
     text-align: center;
   }
 
   .grid_om_mig img {
-    height: 250px; /* mindre billede på mobil */
+    height: 250px;
     width: auto;
     margin: 0 auto;
     justify-content: center;
@@ -106,6 +98,6 @@ section h3 {
   }
 
   .grid_om_mig-1 {
-    place-content: center; /* venstre giver sjældent mening på mobil */
+    place-content: center;
   }
 }
